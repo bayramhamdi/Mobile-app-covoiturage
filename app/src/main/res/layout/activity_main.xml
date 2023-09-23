@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtTel"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="taper votre telephone"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtDepart"
+        app:layout_constraintEnd_toEndOf="@+id/txtDepart"
+        app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+
+    <EditText
+        android:id="@+id/txtDepart"
+        android:layout_width="322dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="depart"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtArr"
+        app:layout_constraintEnd_toEndOf="@+id/txtArr"
+        app:layout_constraintTop_toBottomOf="@+id/txtTel" />
+
+    <EditText
+        android:id="@+id/txtArr"
+        android:layout_width="320dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="arrivée"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtNbr"
+        app:layout_constraintEnd_toEndOf="@+id/txtNbr"
+        app:layout_constraintTop_toBottomOf="@+id/txtDepart" />
+
+    <EditText
+        android:id="@+id/txtNbr"
+        android:layout_width="317dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="nbre de passagers"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtArr" />
+
+    <EditText
+        android:id="@+id/txtDate"
+        android:layout_width="319dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="date"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/txtTel"
+        app:layout_constraintEnd_toEndOf="@+id/txtTel"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="190dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="26dp"
+        android:text="Ajouter un covoiturage"
+        android:textColor="@color/teal_700"
+        android:textColorLink="@color/teal_700"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="188dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="37dp"
+        android:text="Covoiturage"
+        android:textColor="@color/teal_700"
+        android:textColorLink="#009688"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="136dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="#B1B1B1"
+        android:text="Editer"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnInsert"
+        app:layout_constraintTop_toBottomOf="@+id/txtNbr" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="136dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#B1B1B1"
+        android:text="Ajouter"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpdate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNbr" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdate"
+        app:srcCompat="@drawable/images" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
